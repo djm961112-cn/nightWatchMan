@@ -52,7 +52,6 @@ public class PageController {
             }
         }
         ChickenMsg msg=chickenService.findMsg(msg_id);
-        log.info(msg.toString()+msg_id);
         JSONObject chicken=new JSONObject();
         chicken.put("status",true);
         chicken.put("msg",msg);
