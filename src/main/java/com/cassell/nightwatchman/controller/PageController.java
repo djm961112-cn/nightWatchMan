@@ -38,6 +38,7 @@ public class PageController {
         return "sayall";
     }
 
+    //从数据库捞取鸡汤文案给前端
     @RequestMapping(value = "/chickenmsg",method = RequestMethod.GET)
     @ResponseBody
     public String toChickenMsg(){
