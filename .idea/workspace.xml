@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74069e70-6612-4494-ac81-207549708d6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cassell/nightwatchman/entity/TitleMsg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cassell/nightwatchman/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cassell/nightwatchman/controller/PageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,6 +48,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NightwatchmanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="nightwatchman" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cassell.nightwatchman.NightwatchmanApplication" />
@@ -63,7 +79,7 @@
       <updated>1629773665483</updated>
       <workItem from="1629773672690" duration="77000" />
       <workItem from="1629773759492" duration="5399000" />
-      <workItem from="1632464031847" duration="2158000" />
+      <workItem from="1632464031847" duration="5211000" />
     </task>
     <servers />
   </component>

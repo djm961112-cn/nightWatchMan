@@ -33,7 +33,7 @@ public class PageController {
     @RequestMapping("/sayall")
     public String toSayAll(){
         /*
-        * 论坛页
+        * 最新论坛信息页
         * */
         return "sayall";
     }
@@ -43,6 +43,7 @@ public class PageController {
     @ResponseBody
     public String toChickenMsg(){
         //String msg="加油!";
+        //获取随机数，用于捞取数据库数据
         Random r = new Random();
         int msg_id=1;
         while (true){
@@ -52,12 +53,23 @@ public class PageController {
                 break;
             }
         }
+        //通过访问数据库接口获取鸡汤文案
         ChickenMsg msg=chickenService.findMsg(msg_id);
+        //将获取的文案塞到json类型的对象给到前端
         JSONObject chicken=new JSONObject();
         chicken.put("status",true);
         chicken.put("msg",msg);
         chicken.put("msg_id",msg_id);
         log.info(chicken.toJSONString());
         return chicken.toJSONString();
+    }
+
+    //从数据库捞取帖子简介给前端
+    @RequestMapping(value = "/titlemsg",method = RequestMethod.GET)
+    @ResponseBody
+    public String toTitleMsg(){
+        //通过访问数据库接口获取帖子简介及简介title
+        //将获取的文案塞到json类型的对象给到前端
+
     }
 }
