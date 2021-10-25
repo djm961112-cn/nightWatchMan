@@ -70,6 +70,6 @@ public class PageController {
     public String toTitleMsg(){
         //通过访问数据库接口获取帖子简介及简介title
         //将获取的文案塞到json类型的对象给到前端
-        return "";
+        return "here is tiezi";
     }
 }
